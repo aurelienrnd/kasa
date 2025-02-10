@@ -1,0 +1,18 @@
+.erreur-page {
+  border: black solid 1px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.message-404 {
+  border: green solid 1px;
+  color: $primary-color;
+  font-size: 288px;
+  font-weight: 700;
+}
+
+.link-erreur {
+  border: green solid 1px;
+  &:hover {
+  }
+}

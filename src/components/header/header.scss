@@ -1,27 +1,29 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1240px;
   width: 100%;
-
-  border: black solid 1px;
+  max-width: 1440px;
+  margin-top: 45px;
+  border: blue solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-header {
-  width: 210.32px;
   height: 68px;
+  margin-left: 100px;
 }
 
 .list-nav-header {
   display: flex;
-  gap: 57px;
   list-style: none;
-
-  border: blue solid 1px;
+  gap: 57px;
+  margin-right: 100px;
 }
 
 .nav-link {
-  color: $primary-text-color;
   text-decoration: none;
+  color: $primary-text-color;
+  &:hover {
+    border-bottom: black solid 1px;
+  }
 }

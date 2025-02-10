@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import Casa_logo_red from '../../assets/logo/logo_casa_red.png';
+import Kasa_logo_red from '../../assets/logo/logo_casa_red.png';
 
 function Header() {
   return (
     <header>
-      <img src={Casa_logo_red} alt="Logo kasa" className="logo-header" />
+      <img src={Kasa_logo_red} alt="Logo kasa" className="logo-header" />
 
       <nav>
         <ul className="list-nav-header">

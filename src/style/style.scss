@@ -11,16 +11,30 @@ $secondary-text-color: #ffffff; // Couleur du texte sur fond noir
 @import '/src/pages/home/home.scss';
 @import '/src/pages/a_propos/a_propos.scss';
 @import '/src/pages/logement/logement.scss';
-@import '/src/pages/erreur/erreur.scss';
+
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
+  margin: 0;
   font-family: 'Montserrat';
 }
 
+h1 {
+}
+
 #root {
+  border: green solid 2px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  border: red solid 1px;
+  height: 100%;
 }

@@ -1,10 +1,12 @@
 // Import React
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Import Components
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
+
+import Header from './components/header/header.jsx';
+import Footer from './components/footer/footer.jsx';
+
 // Import Pages
 import Home from './pages/home/home';
 import Logement from './pages/logement/logement';
