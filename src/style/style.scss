@@ -7,6 +7,8 @@ $secondary-text-color: #ffffff; // Couleur du texte sur fond noir
 // Composants
 @import '/src/components/footer/footer.scss';
 @import '/src/components/header/header.scss';
+@import '/src/components/banner/banner.scss';
+@import '/src/components/card-container/card-container.scss';
 // Pages
 @import '/src/pages/home/home.scss';
 @import '/src/pages/a_propos/a_propos.scss';
@@ -18,9 +20,6 @@ $secondary-text-color: #ffffff; // Couleur du texte sur fond noir
 body {
   margin: 0;
   font-family: 'Montserrat';
-}
-
-h1 {
 }
 
 #root {
@@ -37,4 +36,21 @@ main {
   max-width: 1440px;
   border: red solid 1px;
   height: 100%;
+}
+
+h1 {
+  color: $secondary-text-color;
+  font-size: 48px;
+}
+
+.overlay {
+  border: red solid 1xp;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

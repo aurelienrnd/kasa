@@ -21,7 +21,7 @@ createRoot(document.getElementById('root')).render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/logement" element={<Logement />} />
+        <Route path="/logement/:id" element={<Logement />} />
         <Route path="/a_propos" element={<Apropos />} />
         <Route path="*" element={<Erreur />} />
       </Routes>
