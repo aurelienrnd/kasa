@@ -1,3 +1,36 @@
 .card-container {
   background-color: $secondary-color;
+  margin-top: 43px;
+  border-radius: 23px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.logement-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 50px;
+}
+
+.card {
+  position: relative;
+
+  img {
+    width: 340px;
+    height: 340px;
+    position: relative;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .logement-title {
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    color: $secondary-text-color;
+    margin-left: 20px;
+  }
 }

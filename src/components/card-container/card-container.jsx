@@ -31,11 +31,16 @@ function CardContainer() {
   return (
     <div className="card-container">
       <span>{(loading && loadingMessage) || (error && erreurMessage)}</span>
-      <ul>
+      <ul className="logement-list">
         {data.map((logement) => (
-          <li key={logement.id}>
+          <li key={logement.id} className="card">
             <Link to={`/logement/${logement.id}`}>
-              {logement.title} / {logement.location}
+              <article>
+                <div>
+                  <img src={logement.cover} alt={logement.title} />
+                </div>
+                <h2 className="logement-title">{logement.location}</h2>
+              </article>
             </Link>
           </li>
         ))}
