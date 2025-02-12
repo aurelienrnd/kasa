@@ -16,17 +16,34 @@
 
   button {
     background-color: $primary-color;
-    background-color: $primary-color;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icone {
     color: $secondary-text-color;
     font-weight: 700;
     font-size: 24px;
-    border: none;
-    width: 32px;
-    height: 32px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+  .icone.animation {
+    transform: rotate(180deg);
   }
 }
 
 .dropdown-texte {
+  transition:
+    max-height 0.8s ease-in-out,
+    opacity 0.8s ease-in-out;
+  opacity: 0;
+}
+.dropdown-texte.open {
+  opacity: 1;
   background-color: $secondary-color;
   margin: 0;
+  padding: 16px 20px;
+  font-size: 18px;
 }

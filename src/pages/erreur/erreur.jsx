@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 
+/** Affiche le contenu de la page "Erreur".
+ * @returns {JSX.Element} Le composant de la page "Erreur".
+ * @Link to "/" lien vers la page d'aceuille
+ */
 function Erreur() {
   return (
     <main>

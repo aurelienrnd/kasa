@@ -25,6 +25,11 @@ const btnList = [
   },
 ];
 
+/** Affiche le contenu de la page "À Propos".
+ * @returns {JSX.Element} Le composant de la page "À Propos".
+ * @Banner {component} creation de la baniere
+ * @DropdownButton {DropdownButton} creations de bouton dropDown
+ */
 function Apropos() {
   return (
     <main>
