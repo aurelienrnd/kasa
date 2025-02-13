@@ -4,6 +4,9 @@
   border-radius: 23px;
   padding-top: 25px;
   padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logement-list {
@@ -56,4 +59,9 @@
       transform: rotate(360deg);
     }
   }
+}
+
+.error-massage {
+  color: $primary-color;
+  font-size: 20px;
 }

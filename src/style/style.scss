@@ -12,9 +12,9 @@ $secondary-text-color: #ffffff; // Couleur du texte sur fond noir
 @import '/src/components/dropdown-button/dropdown-button.scss';
 // Pages
 @import '/src/pages/home/home.scss';
-@import '/src/pages/a_propos/a_propos.scss';
-@import '/src/pages/logement/logement.scss';
-@import '/src/pages/erreur/erreur.scss';
+@import '/src/pages/about/about.scss';
+@import '/src/pages/accommodation/accommodation.scss';
+@import '/src/pages/error/error.scss';
 // Font
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 

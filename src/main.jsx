@@ -9,9 +9,9 @@ import Footer from './components/footer/footer.jsx';
 
 // Import Pages
 import Home from './pages/home/home';
-import Logement from './pages/logement/logement';
-import Apropos from './pages/a_propos/a_propos';
-import Erreur from './pages/erreur/erreur';
+import Accommodation from './pages/accommodation/accommodation';
+import Apropos from './pages/about/about';
+import Error from './pages/error/error';
 // Import Style
 import './style/style.scss';
 
@@ -21,9 +21,9 @@ createRoot(document.getElementById('root')).render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/logement/:id" element={<Logement />} />
-        <Route path="/a_propos" element={<Apropos />} />
-        <Route path="*" element={<Erreur />} />
+        <Route path="/accommodation/:id" element={<Accommodation />} />
+        <Route path="/about" element={<Apropos />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>

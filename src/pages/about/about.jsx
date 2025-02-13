@@ -1,5 +1,5 @@
 import Banner from '../../components/banner/banner';
-import imageBanner from '../../assets/image/banner-apropos.png';
+import imageBanner from '../../assets/images/banner-apropos.png';
 import DropdownButton from '../../components/dropdown-button/dropdown-button';
 
 const btnList = [
@@ -30,7 +30,7 @@ const btnList = [
  * @Banner {component} creation de la baniere
  * @DropdownButton {DropdownButton} creations de bouton dropDown
  */
-function Apropos() {
+function About() {
   return (
     <main>
       <section>
@@ -46,4 +46,4 @@ function Apropos() {
   );
 }
 
-export default Apropos;
+export default About;

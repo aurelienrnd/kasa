@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Kasa_logo_red from '../../assets/logo/logo_casa_red.png';
+import Kasa_logo_red from '../../assets/logo/logo-casa-red.png';
 
 function Header() {
   return (
@@ -15,7 +15,7 @@ function Header() {
           </li>
 
           <li>
-            <Link to="/a_propos" className="nav-link">
+            <Link to="/about" className="nav-link">
               A Propos
             </Link>
           </li>

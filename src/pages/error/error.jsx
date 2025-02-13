@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
  * @returns {JSX.Element} Le composant de la page "Erreur".
  * @Link to "/" lien vers la page d'aceuille
  */
-function Erreur() {
+function Error() {
   return (
     <main>
       <section className="erreur-page">
@@ -18,4 +18,4 @@ function Erreur() {
   );
 }
 
-export default Erreur;
+export default Error;

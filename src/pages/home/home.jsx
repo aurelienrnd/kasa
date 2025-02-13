@@ -1,5 +1,5 @@
 import Banner from '../../components/banner/banner';
-import imageBanner from '../../assets/image/banner-home.png';
+import imageBanner from '../../assets/images/banner-home.png';
 import CardContainer from '../../components/card-container/card-container';
 
 /** Affiche le contenu de la page d'aceuille.
