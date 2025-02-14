@@ -4,7 +4,7 @@ import GetDataContext from './get-data-context.jsx';
 
 // Création du Provider
 function GetDataProvider({ children }) {
-  const url = '/data/accommodation-data.json'; // Chemin vers ton fichier JSON ou API
+  const url = '/data/accommodation-data.json';
   const { loading, data, error } = UseGetFetch(url);
 
   return (

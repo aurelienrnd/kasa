@@ -24,7 +24,7 @@ function UseGetFetch(url) {
           }
 
           const result = await response.json();
-          console.log(result);
+
           setData(result); // Mise à jour des données
         } else {
           throw new Error('Erreur lors du chargement des données');
