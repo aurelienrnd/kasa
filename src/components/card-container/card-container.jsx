@@ -13,7 +13,7 @@ function CardContainer() {
   // fonction get
   const fetchData = async () => {
     try {
-      const response = await fetch('/data/logements.json');
+      const response = await fetch('/data/accommodation-data.json');
 
       // Pour tester le lorder et simuler un chargement plus lent
       await new Promise((resolve) => setTimeout(resolve, 1000)); // Ajoute un délai de 3s
@@ -45,7 +45,7 @@ function CardContainer() {
 
   // affichage d'un message de chargement et d'erreur
   const loaderCircle = <div className="loader-circle"></div>;
-  const erreurMessage = <p className="error-massage">{error}</p>;
+  const erreurMessage = <p className="error-message">{error}</p>;
   console.log(data);
 
   return (
