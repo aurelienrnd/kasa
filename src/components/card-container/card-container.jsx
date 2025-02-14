@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom';
-import UseGetFetch from '../../utile/use-hook/use-getfetch';
+import { useContext } from 'react';
+import GetDataContext from '../../utile/contexte/get-data-context';
 
 /** Affiche les cartes hebergements sur la page d'aceuille.
  * @function {fetchData} une requette api pour recupere les difèrent logement.
  * @returns {JSX.Element} une div avec toute les carte hebergements.
  */
 function CardContainer() {
-  const url = '/data/accommodation-data.json'; // Chemin vers ton fichier JSON ou API
-  const { loading, data, error } = UseGetFetch(url);
+  // recuperation des données depuis le contexte
+  const { loading, data, error } = useContext(GetDataContext);
 
   // affichage d'un message de chargement et d'erreur
   const loaderCircle = <div className="loader-circle"></div>;
   const erreurMessage = <p className="error-message">{error}</p>;
-  console.log(data);
 
   return (
     <div className="card-container">
