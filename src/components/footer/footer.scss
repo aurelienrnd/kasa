@@ -14,4 +14,16 @@ footer div {
 .copywriter {
   margin: 29px;
   color: $secondary-text-color;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    align-items: center;
+  }
+  .copywriter {
+    margin: 0px;
+    width: 133px;
+    font-size: 12px;
+  }
 }

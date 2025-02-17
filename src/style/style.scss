@@ -50,9 +50,44 @@ h1 {
 h2 {
   color: $primary-color;
   font-size: 36px;
+  font-weight: 500;
   margin: 0;
 }
 
 p {
   margin: 0;
+}
+
+.tag {
+  background-color: $primary-color;
+  color: $secondary-text-color;
+  min-width: 115px;
+  max-width: 75%;
+  min-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 5px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    section {
+      margin: 27px 0px;
+    }
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+
+  .tag {
+    min-width: 84px;
+    min-height: 18px;
+    font-size: 10px;
+  }
 }

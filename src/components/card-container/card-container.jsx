@@ -28,7 +28,7 @@ function CardContainer() {
                 <div>
                   <img src={logement.cover} alt={logement.title} />
                 </div>
-                <h2 className="logement-title">{logement.location}</h2>
+                <span className="logement-title tag">{logement.title}</span>
               </article>
             </Link>
           </li>

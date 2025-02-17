@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
 import DropdownButton from '../dropdown-button/dropdown-button';
 
 function Description({ logement }) {
@@ -8,7 +9,7 @@ function Description({ logement }) {
   return (
     <div className="description">
       <div className="description-content">
-        <div>
+        <div className="description-logement">
           <h2>{logement.title}</h2>
           <span>{logement.location}</span>
           <ul className="tag-list">
@@ -20,12 +21,12 @@ function Description({ logement }) {
           </ul>
         </div>
 
-        <div>
+        <div className="host-rating">
           <div className="host">
             <span>{host.name}</span>
             <img src={host.picture} alt={`Photo de profil ${host.name}`} />
           </div>
-          <span>
+          <span className="rating">
             {[...Array(5)].map((element, index) => (
               <FontAwesomeIcon
                 key={index}
@@ -53,5 +54,10 @@ function Description({ logement }) {
     </div>
   );
 }
+
+// Gestion des props
+Description.propTypes = {
+  logement: PropTypes.array.isRequired,
+};
 
 export default Description;

@@ -1,9 +1,10 @@
 .card-container {
   background-color: $secondary-color;
   margin-top: 43px;
+
+  padding: 25px 25px;
   border-radius: 23px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,6 +22,7 @@
 
 .card {
   position: relative;
+  margin: 3px;
 
   img {
     width: 340px;
@@ -33,7 +35,6 @@
     position: absolute;
     bottom: 0;
     font-size: 18px;
-    color: $secondary-text-color;
     margin: 20px;
   }
 }
@@ -64,4 +65,35 @@
 .error-message {
   color: $primary-color;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 1290px) {
+  .card {
+    width: 45%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .card {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    background-color: transparent;
+    margin-top: 0px;
+    padding: 0px;
+    border-radius: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

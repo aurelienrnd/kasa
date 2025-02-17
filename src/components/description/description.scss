@@ -1,16 +1,30 @@
 .description {
-  border: green 1px solid;
+  margin-top: 30px;
 }
 
 .description-content {
   display: flex;
   justify-content: space-between;
-  border: black 1px solid;
+
+  .description-logement {
+    width: 75%;
+  }
+
+  .host-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .host {
   display: flex;
   align-items: center;
+  gap: 10px;
+
+  color: $primary-color;
+  font-size: 18px;
+
   img {
     width: 64px;
     height: 64px;
@@ -18,40 +32,66 @@
   }
 }
 
-.description-buttons {
-  display: flex;
-  gap: 76px;
-}
-
 .tag-list {
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
   gap: 10px;
-  .tag {
-    background-color: $primary-color;
-    color: $secondary-text-color;
-    min-width: 115px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    border-radius: 10px;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  .star {
+    color: #e3e3e3;
+    width: auto;
+    height: 24px;
+  }
+  .red-star {
+    color: $primary-color;
+    width: auto;
+    height: 24px;
   }
 }
 
-.star {
-  color: #e3e3e3;
-}
-
-.red-star {
-  color: $primary-color;
+.description-buttons {
+  display: flex;
+  gap: 76px;
+  margin-top: 24px;
 }
 
 .equipments-list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .description-content {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 16px;
+
+    .description-logement {
+    }
+    .description-logement {
+      width: 100%;
+    }
+
+    .host-rating {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      flex-direction: row-reverse;
+    }
+  }
+
+  .description-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

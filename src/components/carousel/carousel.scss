@@ -28,3 +28,20 @@
 .hidden {
   display: none;
 }
+
+@media only screen and (max-width: 768px) {
+  .carousel {
+    position: relative;
+
+    .image-logement {
+      width: 100%;
+      height: 255px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .btn-nav {
+      width: 11px;
+    }
+  }
+}

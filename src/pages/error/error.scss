@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 139px;
+  text-align: center;
 }
 
 .message-404 {
@@ -15,7 +16,22 @@
 .link-erreur {
   text-decoration: none;
   color: $primary-text-color;
+  font-size: 18px;
   &:hover {
     border-bottom: black solid 1px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .erreur-page {
+    text-align: center;
+    gap: 113px;
+    padding: 113px 57.5px;
+  }
+  .message-404 {
+    font-size: 96px;
+  }
+  .link-erreur {
+    font-size: 14px;
   }
 }
