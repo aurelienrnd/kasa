@@ -1,4 +1,4 @@
-// Définition de la couleur principale
+// Définition des couleurs principale
 $primary-color: #ff6060; // Rouge
 $secondary-color: #f6f6f6; // Gris clair
 $primary-text-color: #000000; // Couleur du texte sur fond blanc
@@ -11,6 +11,7 @@ $secondary-text-color: #ffffff; // Couleur du texte sur fond noir
 @import '/src/components/card-container/card-container.scss';
 @import '/src/components/dropdown-button/dropdown-button.scss';
 @import '/src/components/carousel/carousel.scss';
+@import '/src/components/description/description.scss';
 // Pages
 @import '/src/pages/home/home.scss';
 @import '/src/pages/about/about.scss';
@@ -49,4 +50,9 @@ h1 {
 h2 {
   color: $primary-color;
   font-size: 36px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }

@@ -23,7 +23,7 @@ function DropdownButton({ label, texte }) {
           <FontAwesomeIcon icon={faChevronUp} className={`icone ${isOn ? 'animation' : ''}`} />
         </button>
       </span>
-      {isOn && <p className="dropdown-texte">{texte}</p>}
+      {isOn && <div className="dropdown-texte">{texte}</div>}
     </div>
   );
 }

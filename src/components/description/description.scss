@@ -1,0 +1,57 @@
+.description {
+  border: green 1px solid;
+}
+
+.description-content {
+  display: flex;
+  justify-content: space-between;
+  border: black 1px solid;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+}
+
+.description-buttons {
+  display: flex;
+  gap: 76px;
+}
+
+.tag-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  .tag {
+    background-color: $primary-color;
+    color: $secondary-text-color;
+    min-width: 115px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 10px;
+  }
+}
+
+.star {
+  color: #e3e3e3;
+}
+
+.red-star {
+  color: $primary-color;
+}
+
+.equipments-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
