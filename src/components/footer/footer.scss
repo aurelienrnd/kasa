@@ -1,3 +1,4 @@
+// import variable
 @use '/src/style/color.scss' as valiable-color;
 
 footer {
@@ -24,6 +25,7 @@ footer div {
   font-size: 24px;
 }
 
+/**** media queries ****/
 @media only screen and (max-width: 768px) {
   footer {
     align-items: center;

@@ -1,3 +1,4 @@
+// import variable
 @use '/src/style/color.scss' as valiable-color;
 
 .card-container {
@@ -63,6 +64,7 @@
   font-size: 20px;
 }
 
+/**** media queries ****/
 @media only screen and (max-width: 1290px) {
   .card {
     width: 45%;
