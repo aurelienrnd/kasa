@@ -1,3 +1,5 @@
+@use '/src/style/color.scss' as valiable-color;
+
 .erreur-page {
   display: flex;
   flex-direction: column;
@@ -8,14 +10,14 @@
 }
 
 .message-404 {
-  color: $primary-color;
+  color: valiable-color.$primary-color;
   font-size: 288px;
   font-weight: 700;
 }
 
 .link-erreur {
   text-decoration: none;
-  color: $primary-text-color;
+  color: valiable-color.$primary-text-color;
   font-size: 18px;
   &:hover {
     border-bottom: black solid 1px;

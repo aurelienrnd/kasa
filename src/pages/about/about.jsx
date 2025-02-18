@@ -3,7 +3,7 @@ import Banner from '../../components/banner/banner';
 import DropdownButton from '../../components/dropdown-button/dropdown-button';
 
 //import image
-import imageBanner from '../../assets/images/banner-apropos.png';
+import imageBanner from '../../assets/images/banner-apropos.webp';
 
 // Tableau contenant le contenu de chaque bouton dropdown
 const btnList = [

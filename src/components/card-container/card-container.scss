@@ -1,5 +1,7 @@
+@use '/src/style/color.scss' as valiable-color;
+
 .card-container {
-  background-color: $secondary-color;
+  background-color: valiable-color.$secondary-color;
   margin-top: 43px;
 
   padding: 25px 25px;
@@ -43,7 +45,7 @@
   width: 100px;
   height: 100px;
   border: 10px solid gray;
-  border-top: 10px solid $primary-color;
+  border-top: 10px solid valiable-color.$primary-color;
   border-radius: 50%;
   animation: spin 1s infinite linear;
   @keyframes spin {
@@ -57,7 +59,7 @@
 }
 
 .error-message {
-  color: $primary-color;
+  color: valiable-color.$primary-color;
   font-size: 20px;
 }
 

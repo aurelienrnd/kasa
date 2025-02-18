@@ -1,3 +1,5 @@
+@use '/src/style/color.scss' as valiable-color;
+
 footer {
   background-color: black;
   width: 100%;
@@ -9,11 +11,16 @@ footer {
 
 footer div {
   text-align: center;
+
+  .logo-footer {
+    width: 122px;
+    height: auto;
+  }
 }
 
 .copywriter {
   margin: 29px;
-  color: $secondary-text-color;
+  color: valiable-color.$secondary-text-color;
   font-size: 24px;
 }
 

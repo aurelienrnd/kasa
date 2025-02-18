@@ -1,3 +1,5 @@
+@use '/src/style/color.scss' as valiable-color;
+
 header {
   width: 100%;
   max-width: 1440px;
@@ -9,6 +11,7 @@ header {
 
 .logo-header {
   height: 68px;
+  width: auto;
   margin-left: 100px;
 }
 
@@ -25,7 +28,7 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: $primary-text-color;
+  color: valiable-color.$primary-text-color;
   &:hover {
     border-bottom: black solid 1px;
   }

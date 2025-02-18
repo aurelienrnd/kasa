@@ -1,24 +1,18 @@
-// Définition des couleurs principale
-$primary-color: #ff6060; // Rouge
-$secondary-color: #f6f6f6; // Gris clair
-$primary-text-color: #000000; // Couleur du texte sur fond blanc
-$secondary-text-color: #ffffff; // Couleur du texte sur fond noir
-
 // Composants
-@import '/src/components/footer/footer.scss';
-@import '/src/components/header/header.scss';
-@import '/src/components/banner/banner.scss';
-@import '/src/components/card-container/card-container.scss';
-@import '/src/components/dropdown-button/dropdown-button.scss';
-@import '/src/components/carousel/carousel.scss';
-@import '/src/components/description/description.scss';
+@use '/src/components/footer/footer.scss';
+@use '/src/components/header/header.scss';
+@use '/src/components/banner/banner.scss';
+@use '/src/components/card-container/card-container.scss';
+@use '/src/components/dropdown-button/dropdown-button.scss';
+@use '/src/components/carousel/carousel.scss';
+@use '/src/components/description/description.scss';
 // Pages
-@import '/src/pages/home/home.scss';
-@import '/src/pages/about/about.scss';
-@import '/src/pages/accommodation/accommodation.scss';
-@import '/src/pages/error/error.scss';
-// Font
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@use '/src/pages/home/home.scss';
+@use '/src/pages/about/about.scss';
+@use '/src/pages/accommodation/accommodation.scss';
+@use '/src/pages/error/error.scss';
+// Variables
+@use '/src/style/color.scss' as valiable-color;
 
 body {
   margin: 0;
@@ -43,20 +37,20 @@ main {
 }
 
 h1 {
-  color: $secondary-text-color;
+  color: valiable-color.$secondary-text-color;
   font-size: 48px;
 }
 
 h2 {
-  color: $primary-color;
+  color: valiable-color.$primary-color;
   font-size: 36px;
   font-weight: 500;
   margin: 0;
 }
 
 .tag {
-  background-color: $primary-color;
-  color: $secondary-text-color;
+  background-color: valiable-color.$primary-color;
+  color: valiable-color.$secondary-text-color;
   min-width: 115px;
   max-width: 75%;
   min-height: 25px;
