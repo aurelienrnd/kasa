@@ -1,14 +1,19 @@
+// Import modules
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-/** Affiche la bannire sur la page d'aceuille et A propos".
- * @returns {JSX.Element} Le composant du "Banner".
- * @param {label} string Le non du dropdown.
- * @param {texte} string Le contenue a afficher.
+/** Crée un bouton affichant un texte déroulant.
+ * @returns {JSX.Element} Un bouton avac un texte deroulant.
+ *
+ * @param {string} label - Le nom du dropdown.
+ * @param {string} texte - Le contenu à afficher.
+ *
+ * @FontAwesomeIcon faChevronUp - Icon Importée depuis FontAwesome
  */
 function DropdownButton({ label, texte }) {
+  // Affiche l'état du bouton (ouvert ou fermé)
   const [isOn, setIsOn] = useState(false);
 
   return (

@@ -1,11 +1,15 @@
+// import component
 import Banner from '../../components/banner/banner';
-import imageBanner from '../../assets/images/banner-home.png';
 import CardContainer from '../../components/card-container/card-container';
+
+//import  image
+import imageBanner from '../../assets/images/banner-home.png';
 
 /** Affiche le contenu de la page d'aceuille.
  * @returns {JSX.Element} Le composant de la page "Home".
- * @Banner {component} creation de la baniere
- * @DropdownButton {CardContainer} creations des card hebergement
+ *
+ * @Banner Component - Creation de la baniere
+ * @CardContainer Component -  Creations des card hebergement
  */
 function Home() {
   const titleValue = 'Chez vous, partout et ailleurs';

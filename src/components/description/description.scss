@@ -38,6 +38,7 @@
   margin: 20px 0 0 0;
   padding: 0;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .rating {
@@ -76,9 +77,20 @@
     gap: 16px;
 
     .description-logement {
-    }
-    .description-logement {
       width: 100%;
+      span {
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+
+    .rating {
+      .star {
+        height: 13px;
+      }
+      .red-star {
+        height: 13px;
+      }
     }
 
     .host-rating {
@@ -88,6 +100,10 @@
 
       flex-direction: row-reverse;
     }
+  }
+
+  .host {
+    font-size: 12px;
   }
 
   .description-buttons {

@@ -1,7 +1,8 @@
-// Import React
+// Import modules React
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 // Import Components
 import Header from './components/header/header.jsx';
 import Footer from './components/footer/footer.jsx';
@@ -14,6 +15,7 @@ import Home from './pages/home/home';
 import Accommodation from './pages/accommodation/accommodation';
 import Apropos from './pages/about/about';
 import Error from './pages/error/error';
+
 // Import Style
 import './style/style.scss';
 

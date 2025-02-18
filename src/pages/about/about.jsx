@@ -1,7 +1,11 @@
+// import components
 import Banner from '../../components/banner/banner';
-import imageBanner from '../../assets/images/banner-apropos.png';
 import DropdownButton from '../../components/dropdown-button/dropdown-button';
 
+//import image
+import imageBanner from '../../assets/images/banner-apropos.png';
+
+// Tableau contenant le contenu de chaque bouton dropdown
 const btnList = [
   {
     label: 'Fiabilité',
@@ -27,8 +31,9 @@ const btnList = [
 
 /** Affiche le contenu de la page "À Propos".
  * @returns {JSX.Element} Le composant de la page "À Propos".
- * @Banner {component} creation de la baniere
- * @DropdownButton {DropdownButton} creations de bouton dropDown
+ *
+ * @Banner Component - Creation de la baniere
+ * @DropdownButton Component - Creations des boutons dropDown
  */
 function About() {
   return (

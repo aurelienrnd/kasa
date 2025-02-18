@@ -1,5 +1,9 @@
+// import image
 import Kasa_logo_white from '../../assets/logo/logo-kasa-white.png';
 
+/** Crée le footer du site.
+ * @returns {JSX.Element} Le footer.
+ */
 function Footer() {
   return (
     <footer>

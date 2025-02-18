@@ -39,12 +39,6 @@
   }
 }
 
-.loader-erreur-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .loader-circle {
   width: 100px;
   height: 100px;
@@ -89,7 +83,7 @@
   .card-container {
     background-color: transparent;
     margin-top: 0px;
-    padding: 0px;
+    padding: 20px 0px;
     border-radius: 23px;
 
     display: flex;

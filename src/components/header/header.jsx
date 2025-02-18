@@ -1,6 +1,15 @@
+// import modul
 import { Link } from 'react-router-dom';
+
+//import image
 import Kasa_logo_red from '../../assets/logo/logo-casa-red.png';
 
+/** Crée le header du site.
+ * @returns {JSX.Element} Le header avec un logo et les liens de navigation.
+ *
+ * @Link - "/" -  lien vers la page d'aceuille
+ * @Link - "/about" -  lien vers la page A Propos
+ */
 function Header() {
   return (
     <header>

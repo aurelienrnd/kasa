@@ -1,8 +1,18 @@
+// Import modules
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
+
+// Import component
 import DropdownButton from '../dropdown-button/dropdown-button';
 
+/** Affiche les informations de chaque hébergement.
+ * @returns {JSX.Element} Une div descriptive de l'hébergement.
+ * @param {Object} logement - Les données d'un hébergement spécifique.
+ *
+ * @DropdownButton Component - Un bouton deroulent un texte
+ * @FontAwesomeIcon faStar - une icone importée depuis FontAwesome
+ */
 function Description({ logement }) {
   const host = logement.host;
 
@@ -12,6 +22,7 @@ function Description({ logement }) {
         <div className="description-logement">
           <h2>{logement.title}</h2>
           <span>{logement.location}</span>
+
           <ul className="tag-list">
             {logement.tags.map((tag, index) => (
               <li key={`${index}-${tag}`} className="tag">
@@ -26,6 +37,7 @@ function Description({ logement }) {
             <span>{host.name}</span>
             <img src={host.picture} alt={`Photo de profil ${host.name}`} />
           </div>
+
           <span className="rating">
             {[...Array(5)].map((element, index) => (
               <FontAwesomeIcon
