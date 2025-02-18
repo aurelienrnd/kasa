@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 
 //import image
-import Kasa_logo_red from '../../assets/logo/logo-casa-red.png';
+import Kasa_logo_red from '../../assets/logo/logo-kasa-red.png';
 
 /** Crée le header du site.
  * @returns {JSX.Element} Le header avec un logo et les liens de navigation.
