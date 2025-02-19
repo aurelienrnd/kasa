@@ -4,27 +4,27 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 
 // Import component
-import DropdownButton from '../dropdown-button/dropdown-button';
+import DropdownButton from '../dropdown-button/Dropdown-button';
 
 /** Affiche les informations de chaque hébergement.
  * @returns {JSX.Element} Une div descriptive de l'hébergement.
- * @param {Object} logement - Les données d'un hébergement spécifique.
+ * @param {Object} accommodation - Les données d'un hébergement spécifique.
  *
  * @DropdownButton Component - Un bouton deroulent un texte
  * @FontAwesomeIcon faStar - une icone importée depuis FontAwesome
  */
-function Description({ logement }) {
-  const host = logement.host;
+function Description({ accommodation }) {
+  const host = accommodation.host;
 
   return (
     <div className="description">
       <div className="description-content">
         <div className="description-logement">
-          <h2>{logement.title}</h2>
-          <span>{logement.location}</span>
+          <h2>{accommodation.title}</h2>
+          <span>{accommodation.location}</span>
 
           <ul className="tag-list">
-            {logement.tags.map((tag, index) => (
+            {accommodation.tags.map((tag, index) => (
               <li key={`${index}-${tag}`} className="tag">
                 {tag}
               </li>
@@ -43,7 +43,7 @@ function Description({ logement }) {
               <FontAwesomeIcon
                 key={index}
                 icon={faStar}
-                className={index < parseInt(logement.rating) ? `red-star` : `star`}
+                className={index < parseInt(accommodation.rating) ? `red-star` : `star`}
               />
             ))}
           </span>
@@ -51,12 +51,12 @@ function Description({ logement }) {
       </div>
 
       <div className="description-buttons">
-        <DropdownButton label="Description" texte={logement.description}></DropdownButton>
+        <DropdownButton label="Description" texte={accommodation.description}></DropdownButton>
         <DropdownButton
           label="Équipements"
           texte={
             <ul className="equipments-list">
-              {logement.equipments.map((element, index) => (
+              {accommodation.equipments.map((element, index) => (
                 <li key={`${index}-${element}`}>{element}</li>
               ))}
             </ul>
@@ -69,7 +69,7 @@ function Description({ logement }) {
 
 // Gestion des props
 Description.propTypes = {
-  logement: PropTypes.array.isRequired,
+  accommodation: PropTypes.array.isRequired,
 };
 
 export default Description;

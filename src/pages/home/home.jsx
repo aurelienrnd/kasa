@@ -1,6 +1,6 @@
 // import component
-import Banner from '../../components/banner/banner';
-import CardContainer from '../../components/card-container/card-container';
+import Banner from '../../components/banner/Banner';
+import CardContainer from '../../components/card-container/Card-container';
 
 //import  image
 import imageBanner from '../../assets/images/banner-home.webp';

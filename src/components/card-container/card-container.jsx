@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 
 // Import contexte
-import GetDataContext from '../../utile/contexte/get-data-context';
+import GetDataContext from '../../useful/contexte/Get-data-context';
 
 /** Affiche les cartes d'hébergement sur la page d'accueil.
  * @returns {JSX.Element} Une div contenant toutes les cartes d'hébergement,

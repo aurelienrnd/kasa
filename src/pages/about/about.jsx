@@ -1,9 +1,9 @@
 // import components
-import Banner from '../../components/banner/banner';
-import DropdownButton from '../../components/dropdown-button/dropdown-button';
+import Banner from '../../components/banner/Banner';
+import DropdownButton from '../../components/dropdown-button/Dropdown-button';
 
 //import image
-import imageBanner from '../../assets/images/banner-apropos.webp';
+import imageBanner from '../../assets/images/banner-about.webp';
 
 // Tableau contenant le contenu de chaque bouton dropdown
 const btnList = [

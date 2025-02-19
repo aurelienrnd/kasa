@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 //import context
-import GetDataContext from './get-data-context.jsx';
+import GetDataContext from './Get-data-context.jsx';
 
 /**Crée un provider pour partager les données récupérées via fetch.
  * @returns {JSX.Element} Le contexte "GetDataContext".

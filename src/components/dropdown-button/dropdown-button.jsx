@@ -21,6 +21,7 @@ function DropdownButton({ label, texte }) {
       <span className="dropdown-label">
         {label}
         <button
+          aria-label={label}
           onClick={() => {
             setIsOn(!isOn);
           }}
