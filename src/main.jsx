@@ -23,26 +23,14 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <GetDataProvider>
-              <Home />
-            </GetDataProvider>
-          }
-        />
-        <Route
-          path="/accommodation/:id"
-          element={
-            <GetDataProvider>
-              <Accommodation />
-            </GetDataProvider>
-          }
-        />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <GetDataProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/accommodation/:id" element={<Accommodation />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </GetDataProvider>
       <Footer />
     </Router>
   </StrictMode>

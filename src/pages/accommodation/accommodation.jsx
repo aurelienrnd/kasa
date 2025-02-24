@@ -28,7 +28,7 @@ function Accommodation() {
   const loaderCircle = <div className="loader-circle"></div>;
   if (loading) return <main className="loader-main">{loaderCircle};</main>;
   const erreurMessage = <p className="error-message">{error}</p>;
-  if (error) return <main className="error-massage-main">{erreurMessage};</main>;
+  if (error) return <main className="error-message-main">{erreurMessage};</main>;
 
   // Compare le paramètre de l'URL avec le tableau data, si aucun élément ne correspond, redirection vers une page d'erreur.
   let accommodation = data.filter((element) => element.id === id)[0]; // [0] car filter me retourne un tableaux de un element
