@@ -24,7 +24,7 @@ function GetDataProvider({ children }) {
         const response = await fetch('/data/accommodation-data.json');
 
         /*
-        // Pour tester le lorder et simuler un chargement plus lent
+         Pour tester le lorder et simuler un chargement plus lent
         await new Promise((resolve) => setTimeout(resolve, 500)); // Ajoute un délai de 0.5s
         */
 

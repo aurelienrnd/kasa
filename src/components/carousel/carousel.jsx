@@ -28,7 +28,7 @@ function Carousel({ tblImg, descriptionAlt }) {
     <div className="carousel">
       <div className="nav-carousel">
         <img
-          className="btn-nav"
+          className={tblImg.length > 1 ? 'btn-nav' : 'btn-nav-hiden'}
           alt="precedent"
           src={previous}
           tabIndex="0"
@@ -37,7 +37,7 @@ function Carousel({ tblImg, descriptionAlt }) {
         />
 
         <img
-          className="btn-nav"
+          className={tblImg.length > 1 ? 'btn-nav' : 'btn-nav-hiden'}
           src={next}
           tabIndex="0"
           alt="suivant"

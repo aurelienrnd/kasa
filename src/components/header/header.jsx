@@ -1,5 +1,5 @@
 // import modul
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 //import image
 import Kasa_logo_red from '../../assets/logo/logo-kasa-red.png';
@@ -11,6 +11,8 @@ import Kasa_logo_red from '../../assets/logo/logo-kasa-red.png';
  * @Link - "/about" -  lien vers la page A Propos
  */
 function Header() {
+  const location = useLocation();
+
   return (
     <header>
       <img src={Kasa_logo_red} alt="Logo kasa" className="logo-header" />
@@ -18,13 +20,16 @@ function Header() {
       <nav>
         <ul className="list-nav-header">
           <li>
-            <Link to="/" className="nav-link">
+            <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>
               Accueil
             </Link>
           </li>
 
           <li>
-            <Link to="/about" className="nav-link">
+            <Link
+              to="/about"
+              className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
+            >
               A Propos
             </Link>
           </li>
