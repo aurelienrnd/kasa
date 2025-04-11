@@ -1,8 +1,26 @@
-# React + Vite
+## Kasa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Création d'un site de location immobilière avec architecture React complète avec React Router, gestion de contexte via Context API, et stylisation avec SCSS. Implémentation de routes dynamiques, d’un provider global, et de composants réutilisables.
 
-Currently, two official plugins are available:
+Pour demarrer le projet :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- npm install
+- npm run dev
+
+## Dependencies
+
+- Dependencies
+
+  - @fortawesome
+  - prop-types
+  - react
+  - react-dom
+  - react-router-dom
+  - sass
+  - styled-components
+
+- DevDependencies
+  - @eslint/js
+  - @types/react": "^19.0.8",
+  - prettier": "^3.4.2",
+  - vite": "^6.1.0"
