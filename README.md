@@ -21,6 +21,6 @@ Pour demarrer le projet :
 
 - DevDependencies
   - @eslint/js
-  - @types/react": "^19.0.8",
-  - prettier": "^3.4.2",
-  - vite": "^6.1.0"
+  - @types/react
+  - prettier
+  - vite
